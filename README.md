@@ -48,53 +48,52 @@ EDA involved the exploring of the Data to answer some questions about the Data s
 
   ### Data Analysis
   
-```
-
   This is where we include some basic lines of code or queries or even som of the DAX expressions used during analysis;
 
-  ```SQL
+
+``` SQL
   create database LISAPROJECT1
-select * from [dbo].[LitaCustomerData]
+  select * from [dbo].[LitaCustomerData]
 
 --- Total number of customers from each region---
-select Region, sum(CustomerId) as TotalNumberOfCustomers from [dbo].[LitaCustomerData]
-group by Region
+    select Region, sum(CustomerId) as TotalNumberOfCustomers from [dbo].[LitaCustomerData]
+    group by Region
 
 --- The most popular subscription type by the number of customers---
-select top 1 SubscriptionType, max(CustomerId) as NumberOfCustomer, 
-sum(CustomerId) as MostPopularSubscription from [dbo].[LitaCustomerData]
-group by SubscriptionType
+    select top 1 SubscriptionType, max(CustomerId) as NumberOfCustomer, 
+    sum(CustomerId) as MostPopularSubscription from [dbo].[LitaCustomerData]
+    group by SubscriptionType
 
 --- Customers who canceled their subscription within 6 months---
-select top 11 CustomerId, CustomerName, Canceled  from [dbo].[LitaCustomerData]
-where Canceled = 0 and datediff(month, SubscriptionEnd, SubscriptionStart)<=6 
+    select top 11 CustomerId, CustomerName, Canceled  from [dbo].[LitaCustomerData]
+    where Canceled = 0 and datediff(month, SubscriptionEnd, SubscriptionStart)<=6 
 
 --- Average subscription duration for all customers---
-select CustomerId, AVG(SubscriptionDuration) as AverageSubscriptionDuration
-from [dbo].[LitaCustomerData]
-group by CustomerId
+    select CustomerId, AVG(SubscriptionDuration) as AverageSubscriptionDuration
+    from [dbo].[LitaCustomerData]
+    group by CustomerId
 
 --- Customers with subscriptions longer than 12 months---
-select CustomerId, CustomerName, SubscriptionDuration from [dbo].[LitaCustomerData]
-where Canceled = 1 and datediff(month, SubscriptionEnd, SubscriptionStart)>12 
+    select CustomerId, CustomerName, SubscriptionDuration from [dbo].[LitaCustomerData]
+    where Canceled = 1 and datediff(month, SubscriptionEnd, SubscriptionStart)>12 
 
 
 --- Total revenue by subscription type---
-select SubscriptionType, sum(Revenue) as TotalRevenue
-from [dbo].[LitaCustomerData]
-group by SubscriptionType
+    select SubscriptionType, sum(Revenue) as TotalRevenue
+    from [dbo].[LitaCustomerData]
+    group by SubscriptionType
 
 --- The top 3 regions by subscription cancellations---
-select top 3 Region from [dbo].[LitaCustomerData]
-where Canceled = 0
-group by Region
+    select top 3 Region from [dbo].[LitaCustomerData]
+    where Canceled = 0
+    group by Region
 
 
 --- Total number of active and canceled subscriptions---
-select count(canceled) as TotalActive from [dbo].[LitaCustomerData]
-where Canceled = 1 
-select count(canceled) as TotalCanceled from [dbo].[LitaCustomerData]
-where Canceled = 0
+    select count(canceled) as TotalActive from [dbo].[LitaCustomerData]
+    where Canceled = 1 
+    select count(canceled) as TotalCanceled from [dbo].[LitaCustomerData]
+    where Canceled = 0
 ```
 
 ### Data Visualization 
