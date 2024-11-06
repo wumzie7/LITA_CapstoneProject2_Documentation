@@ -100,5 +100,5 @@ EDA involved the exploring of the Data to answer some questions about the Data s
 
 Here I build a Power BI dashboard that visualizes key customer segments, cancellations, and subscription trends. Include slicers for interactive analysis. 
 
+![LitaCustomerData](https://github.com/user-attachments/assets/51831912-6e68-4903-b99d-0d10349839e6)
 
-![LitaCustomerData](https://github.com/user-attachments/assets/8a20e057-da5d-49d1-8038-b55036309373)
