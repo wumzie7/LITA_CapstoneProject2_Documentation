@@ -2,6 +2,21 @@
 
 ### Project Title:  Customer Segmentation for a Subscription Service 
 
+
+[Project Overview](#project-overview)
+
+[Data Sources](#data-sources)
+
+[Tools Used](#tools-used)
+
+[Data Cleaning and Preparations](#data-leaning-and-preparations)
+
+[Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Data Analysis](#data-analysis)
+
+[Data Visualization](#data-visualization)
+
 ### Project Overview
 
 ```
@@ -47,6 +62,18 @@ EDA involved the exploring of the Data to answer some questions about the Data s
 ```
 
   ### Data Analysis
+
+  Microsoft Excel
+```
+
+[LitaCustomerData_Solution.xlsx](https://github.com/user-attachments/files/17654304/LitaCustomerData_Solution.xlsx)
+
+```
+
+
+SQL
+
+This is where we include some basic lines of code or queries during analysis;
   
   This is where we include some basic lines of code or queries or even som of the DAX expressions used during analysis;
 
@@ -102,6 +129,8 @@ Here I build a Power BI dashboard that visualizes key customer segments, cancell
 
 ![LitaCustomerData](https://github.com/user-attachments/assets/51831912-6e68-4903-b99d-0d10349839e6)
 
-![LitaCustomerData](https://github.com/user-attachments/assets/24d190de-c68f-4127-b91d-b088dae4efa8)
+![LitaCustomerData](https://github.com/user-attachments/assets/643ce033-aae4-4d10-9a5b-8e09306433ea)
+
+
 
 
