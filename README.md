@@ -131,6 +131,6 @@ Here I build a Power BI dashboard that visualizes key customer segments, cancell
 
 ![LitaCustomerData](https://github.com/user-attachments/assets/643ce033-aae4-4d10-9a5b-8e09306433ea)
 
-
+https://github.com/wumzie7/LITA_CapstoneProject2_Documentation/blob/main/LitaCustomerData.jpg
 
 
